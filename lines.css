@@ -1,0 +1,17 @@
+:root{
+    --length:0px;
+    --angle:0deg;
+    --translateX: 0px;
+    --translateY: 0px;
+}
+
+.line{
+    /* border-top: 2px solid olive; */
+    height: 0.1px;
+    width: var(--length);
+    background-color: #0000FF;
+    position: absolute;
+    transform: rotateZ(var(--angle)); 
+    top:var(--translateY);
+    left:var(--translateX);
+}
