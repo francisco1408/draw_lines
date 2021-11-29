@@ -8,7 +8,7 @@ To use it,
 4) In your script, push to the array a new object of the class line. The constructor receives two arguments: 1: an array ob objects with the start an end coordenates. 2: the id of the new line.
 
 Example:
-
+```
 let lines = [];
 let coordenates = [
     {
@@ -21,9 +21,10 @@ let coordenates = [
     }
 ];
 lines.push(new line(coordenates,lines.length));
-
+```
 Example to draw line every two clicks:
-let lines = [];
+```
+let lines = []; 
 let coordenates = [];
 let pushCoordenate = (evento)=> coordenates.push({"x":evento.x,"y":evento.y});
 document.addEventListener("click",(event)=>{
@@ -37,3 +38,4 @@ document.addEventListener("click",(event)=>{
         pushCoordenate(event);
     }
 });
+```
